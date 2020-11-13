@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('doc')->group(base_path('routes/path/doc.php'));
+
+Route::prefix('api')->group(base_path('routes/path/api.php'));
