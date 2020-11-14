@@ -9,8 +9,26 @@
 // | Author: Somebody <midsmr@qq.com>
 // +---------------------------------------------------------
 
-use Illuminate\Support\Facades\Route;
+namespace App\Http\Controllers;
 
-Route::get('icp', 'IcpController@doc')
-    ->where('action', '[a-zA-Z]+')
-    ->name('api.icp');
+
+use Illuminate\Http\Request;
+
+class IcpController extends Controller
+{
+    public function doc(Request $request)
+    {
+        return view('icp.ChinaZ');
+    }
+
+    public function api(Request $request)
+    {
+        return $this->chinaZ($request);
+
+    }
+
+    public function chinaZ(Request $request)
+    {
+
+    }
+}

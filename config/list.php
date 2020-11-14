@@ -9,8 +9,9 @@
 // | Author: Somebody <midsmr@qq.com>
 // +---------------------------------------------------------
 
-use Illuminate\Support\Facades\Route;
-
-Route::get('icp', 'IcpController@doc')
-    ->where('action', '[a-zA-Z]+')
-    ->name('api.icp');
+return [
+    'icp' => [
+        'title' => '备案查询',
+        'description' => '查询域名的ICP备案信息',
+    ]
+];
