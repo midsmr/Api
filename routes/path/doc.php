@@ -11,6 +11,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('icp', 'IcpController@doc')
-    ->where('action', '[a-zA-Z]+')
-    ->name('doc.icp');
+Route::get('icp', 'IcpController@doc')->name('doc.icp');
