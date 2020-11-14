@@ -20,7 +20,7 @@ class IcpController extends Controller
 {
     public function doc(Request $request)
     {
-        return view('icp.ChinaZ');
+        return view('icp');
     }
 
     public function api(Request $request)
@@ -45,7 +45,7 @@ class IcpController extends Controller
         $isDomain = $dom->find('div[class=Tool-IcpMainCent wrapper02 mt10] p[class=tc col-red fz18 YaHei pb20]', 0);
 
         if ($isDomain != false) {
-            if (strpos($isDomain->getPlainText(), '输入参数错误') !== false) {
+            if (strpos($isDomain->getPlainText(), '输入参数') !== false) {
                 return json(-2, '请输入正确的域名');
             }
         }
@@ -69,7 +69,7 @@ class IcpController extends Controller
         ];
 
         $data['update'] = strstr($dom->find('span[class=fz12 col-gray04 plr5 fl]', 0)->getPlainText(), '20');
-        //备案更新时间
+        //备案信息更新时间
 
         $data['name'] = $dom->find('li[class=bg-gray clearfix] p a', 0)->getPlainText();
         //主办单位名称
