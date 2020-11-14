@@ -19,18 +19,18 @@ class Helper
      * @param int|array $status 状态码
      * @param null|string $message 信息
      * @param null|string|array $result 其他参数
-     * @return string
+     * @return array
      */
     public static function json($status, $message = null, $result = null)
     {
         if (is_array($status)) {
-            return json_encode($status);
+            return $status;
         }
 
-        return json_encode([
+        return [
             'status' => $status,
             'message' => $message,
             'result' => $result
-        ]);
+        ];
     }
 }
