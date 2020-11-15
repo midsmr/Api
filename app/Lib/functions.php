@@ -22,3 +22,23 @@ function json($status, $message = null, $result = null)
 {
     return Helper::json($status, $message, $result);
 }
+
+function get_title($name)
+{
+    return Helper::getTitle($name);
+}
+
+function get_description($name)
+{
+    return Helper::getDescription($name);
+}
+
+function get_api($name)
+{
+    return Helper::getApi($name);
+}
+
+function get_doc($name)
+{
+    return Helper::getDoc($name);
+}
