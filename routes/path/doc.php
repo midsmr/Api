@@ -11,4 +11,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('icp', 'IcpController@doc')->name('doc.icp');
+Route::get(\App\Http\Controllers\IcpController::$name, 'IcpController@doc')
+    ->name(\App\Http\Controllers\IcpController::$doc);

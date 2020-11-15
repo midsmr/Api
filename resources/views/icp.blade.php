@@ -4,7 +4,7 @@
 @section('doc')
     <p class="simpleTable">
         <span class="layui-badge layui-bg-black">接口地址：</span>
-        <span class="url" data-clipboard-text="{{route('api.icp')}}">{{route('api.icp')}}</span>
+        <span class="url" data-clipboard-text="{{route(\App\Http\Controllers\IcpController::$api)}}">{{route(\App\Http\Controllers\IcpController::$api)}}</span>
     </p>
     <p class="simpleTable">
         <span class="layui-badge layui-bg-green">返回格式：</span>
@@ -16,7 +16,7 @@
     </p>
     <p class="simpleTable">
         <span class="layui-badge layui-bg-blue">请求示例：</span>
-        <span class="url" data-clipboard-text="{{route('api.icp')}}?domain=chinaz.com">{{route('api.icp')}}?domain=chinaz.com</span>
+        <span class="url" data-clipboard-text="{{route(\App\Http\Controllers\IcpController::$api)}}?domain=chinaz.com">{{route('api.icp')}}?domain=chinaz.com</span>
     </p>
     <p class="linep">请求参数说明：</p>
     <table class="layui-table" lay-size="sm">

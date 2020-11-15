@@ -11,21 +11,28 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Count;
 use HtmlParser\ParserDom;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 class IcpController extends Controller
 {
+    public static $name = 'icp';
+
+    public static $doc = 'doc.icp';
+
+    public static $api = 'api.icp';
+
     public function doc(Request $request)
     {
-        return view('icp');
+        return view(static::$name);
     }
 
     public function api(Request $request)
     {
+        Count::increment(static::$name);
         return $this->chinaZ($request);
-
     }
 
     public function chinaZ(Request $request)
