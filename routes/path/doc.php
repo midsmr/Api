@@ -4,7 +4,7 @@
 // +---------------------------------------------------------
 // | Copyright (c) 2020 Somebody All rights reserved.
 // +---------------------------------------------------------
-// | LICENSE: http://license.coscl.org.cn/MulanPSL2
+// | License: http://license.coscl.org.cn/MulanPSL2
 // +---------------------------------------------------------
 // | Author: Somebody <midsmr@qq.com>
 // +---------------------------------------------------------
