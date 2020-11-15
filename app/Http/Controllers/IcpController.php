@@ -26,7 +26,7 @@ class IcpController extends Controller
 
     public function doc(Request $request)
     {
-        return view(static::$name);
+        return view(static::$name, ['name' => static::$name]);
     }
 
     public function api(Request $request)
