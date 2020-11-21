@@ -11,5 +11,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get(\App\Http\Controllers\IcpController::$name, 'IcpController@api')
-    ->name(\App\Http\Controllers\IcpController::$api);
+Route::get('', 'IcpController@api')
+    ->name('api');

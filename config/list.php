@@ -10,10 +10,8 @@
 // +---------------------------------------------------------
 
 return [
-    \App\Http\Controllers\IcpController::$name => [
+    'api' => [
         'title' => '备案查询',
         'description' => '查询域名的ICP备案信息',
-        'api' => \App\Http\Controllers\IcpController::$api,
-        'doc' => \App\Http\Controllers\IcpController::$doc,
     ]
 ];
