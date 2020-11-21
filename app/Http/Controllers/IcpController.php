@@ -18,20 +18,14 @@ use Illuminate\Support\Facades\Http;
 
 class IcpController extends Controller
 {
-    public static $name = 'icp';
-
-    public static $doc = 'doc.icp';
-
-    public static $api = 'api.icp';
-
     public function doc(Request $request)
     {
-        return view(static::$name, ['name' => static::$name]);
+        return view('icp');
     }
 
     public function api(Request $request)
     {
-        Count::increment(static::$name);
+        Count::increment('icp');
         return $this->chinaZ($request);
     }
 
@@ -46,7 +40,11 @@ class IcpController extends Controller
 
         $res = Http::withOptions(['verify' => false])->get('http://icp.chinaz.com/' . $url)->body();
 
-        $dom = new ParserDom($res);
+        try {
+            $dom = new ParserDom($res);
+        } catch (\Exception $e) {
+            return json(-3, $e->getMessage());
+        }
 
         $isDomain = $dom->find('div[class=Tool-IcpMainCent wrapper02 mt10] p[class=tc col-red fz18 YaHei pb20]', 0);
 

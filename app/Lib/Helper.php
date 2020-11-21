@@ -32,24 +32,4 @@ class Helper
             'result' => $result
         ];
     }
-
-    public static function getTitle($name)
-    {
-        return config('list.'.$name.'.title');
-    }
-
-    public static function getDescription($name)
-    {
-        return config('list.'.$name.'.description');
-    }
-
-    public static function getApi($name)
-    {
-        return route(config('list.'.$name.'.api'));
-    }
-
-    public static function getDoc($name)
-    {
-        return route(config('list.'.$name.'.doc'));
-    }
 }
