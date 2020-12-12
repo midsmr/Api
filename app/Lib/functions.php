@@ -11,7 +11,7 @@
 use App\Lib\Helper;
 
 /**
- * Json响应助手函数
+ * Json响应函数
  * @param int|array $status 状态码
  * @param null|string $message 信息
  * @param null|string|array $result 其他参数
@@ -32,7 +32,7 @@ function json($status, $message = null, $result = null): string
 }
 
 /**
- * 获取统计数据助手函数
+ * 获取统计数据函数
  * @param $name
  * @return int
  * @author midsmr <midsmr@qq.com>
