@@ -6,6 +6,7 @@
             <fieldset><legend>{{config('list.icp.title')}}</legend></fieldset>
         </div>
         <blockquote class="layui-elem-quote">{{config('list.icp.description')}}</blockquote>
+        <blockquote class="layui-elem-quote">该接口已调用：{{get_count('icp')}}次</blockquote>
     </div>
     <div class="layui-row">
         <div class="layui-tab layui-tab-brief" lay-filter="tab">
