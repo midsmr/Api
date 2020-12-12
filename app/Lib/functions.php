@@ -18,9 +18,17 @@ use App\Lib\Helper;
  * @return string
  * @author midsmr <midsmr@qq.com>
  */
-function json($status, $message = null, $result = null)
+function json($status, $message = null, $result = null): string
 {
-    return Helper::json($status, $message, $result);
+    if (is_array($status)) {
+        return response()->json($status);
+    }
+
+    return response()->json([
+        'status' => $status,
+        'message' => $message,
+        'result' => $result
+    ]);
 }
 
 /**
@@ -29,7 +37,7 @@ function json($status, $message = null, $result = null)
  * @return int
  * @author midsmr <midsmr@qq.com>
  */
-function get_count($name)
+function get_count($name): int
 {
     return \App\Models\Count::get($name);
 }
