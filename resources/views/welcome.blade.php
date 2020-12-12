@@ -8,7 +8,9 @@
     </div>
     <div class="layui-row">
         <blockquote class="layui-elem-quote">本站程序基于Laravel构建，提供的集成的接口均为技术手段抓包，由开源作者：<a href="https://github.com/midsmr" target="_blank"><span
-                    style="color: red; ">SOMEBODY</span></a>提供永久维护。</blockquote>
+                    style="color: red; ">SOMEBODY</span></a>提供永久更新维护。</blockquote>
+        <blockquote class="layui-elem-quote">欢迎大家Star本程序GitHub仓库<a href="https://github.com/midsmr/Api" target="_blank"><span
+                    style="color: red; ">midsmr/Api</span></a></blockquote>
         <blockquote class="layui-elem-quote">初次使用请查看<a href="{{route('json')}}" target="_self"><span
                     style="color: red; ">JSON响应</span></a>页面</blockquote>
         <blockquote class="layui-elem-quote">特别感谢以下开源项目为本程序运行提供支持（排名不分先后）</blockquote>
