@@ -32,6 +32,9 @@
                 <tr>
                     <td><a href="https://github.com/bupt1987/html-parser" target="_blank">bupt1987/html-parser</a></td>
                 </tr>
+                <tr>
+                    <td><a href="https://github.com/endroid/qr-code" target="_blank">endroid/qr-code</a></td>
+                </tr>
                 </tbody>
             </table>
         </div>
