@@ -29,7 +29,7 @@ class IcpController extends Controller
         return $this->chinaZ($request);
     }
 
-    public function chinaZ(Request $request): string
+    public function chinaZ(Request $request): array
     {
         $url = $request->get('domain');
 
@@ -93,7 +93,12 @@ class IcpController extends Controller
         $data['time'] = $dom->find('li[class=clearfix] p[!class]', 6)->getPlainText();
         //审核时间
 
-        return json(1, 'success', $data);
+        foreach ($data as $v) {
+            if (is_null($v) || $v == null) {
+                return json(-4, '查询失败');
+            }
+        }
 
+        return json(1, 'success', $data);
     }
 }
