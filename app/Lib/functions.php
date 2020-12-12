@@ -15,20 +15,20 @@ use App\Lib\Helper;
  * @param int|array $status 状态码
  * @param null|string $message 信息
  * @param null|string|array $result 其他参数
- * @return string
+ * @return array
  * @author midsmr <midsmr@qq.com>
  */
-function json($status, $message = null, $result = null): string
+function json($status, $message = null, $result = null): array
 {
     if (is_array($status)) {
-        return response()->json($status);
+        return $status;
     }
 
-    return response()->json([
+    return [
         'status' => $status,
         'message' => $message,
         'result' => $result
-    ]);
+    ];
 }
 
 /**
