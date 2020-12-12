@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', config('list.icp.title'))
+@section('title', 'JSON响应')
 @section('content')
     <div class="layui-row">
         <div class="site-title">
