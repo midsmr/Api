@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="layui-row">
-        <blockquote class="layui-elem-quote">本站程序基于Laravel构建，提供的集成的接口均为技术手段抓包，由开源作者：<a href="https://github.com/midsmr" target="_blank"><span
+        <blockquote class="layui-elem-quote">本站程序基于Laravel构建，提供的集成的接口均为技术手段抓包或者第三方开源仓库，由开源作者：<a href="https://github.com/midsmr" target="_blank"><span
                     style="color: red; ">SOMEBODY</span></a>提供永久更新维护。</blockquote>
         <blockquote class="layui-elem-quote">欢迎大家Star本程序GitHub仓库<a href="https://github.com/midsmr/Api" target="_blank"><span
                     style="color: red; ">midsmr/Api</span></a></blockquote>
