@@ -23,7 +23,7 @@ class IcpController extends Controller
         return view('icp');
     }
 
-    public function api(Request $request): string
+    public function api(Request $request)
     {
         Count::increment('icp');
         return $this->chinaZ($request);
