@@ -1,0 +1,43 @@
+.logo {
+    font-size: 1.625rem;
+    color: #fff;
+    line-height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+}
+
+.site-title {
+    margin: 15px 0 20px;
+}
+
+.site-title fieldset {
+    border: none;
+    padding: 0;
+    border-top: 1px solid #eee;
+}
+
+.site-title fieldset legend {
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.copy {
+    word-break: break-all;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #777;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #5FB878;
+}
+
+.requestInfo {
+    line-height: 20px;
+    padding-bottom: 16px;
+}
