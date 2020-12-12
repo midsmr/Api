@@ -33,7 +33,7 @@
             <tr>
                 <td>status</td>
                 <td>Int</td>
-                <td>响应码，1代表成功</td>
+                <td>响应码</td>
             </tr>
             <tr>
                 <td>message</td>
