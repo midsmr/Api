@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('index');
 
+Route::get('/json', function () {
+    return view('json');
+})->name('json');
+
 Route::prefix('doc')->group(base_path('routes/path/doc.php'));
 
 Route::prefix('api')->group(base_path('routes/path/api.php'));

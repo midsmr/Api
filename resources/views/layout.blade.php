@@ -25,6 +25,7 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree" lay-filter="side" lay-shrink="all">
                 <li class="layui-nav-item"><a href="{{route('index')}}">概述</a></li>
+                <li class="layui-nav-item" id="json"><a href="{{route('json')}}">JSON响应</a></li>
                 @foreach(config('list') as $k => $v)
                 <li class="layui-nav-item" id="{{$k}}"><a href="{{route($k)}}">{{$v['title']}}</a></li>
                 @endforeach
