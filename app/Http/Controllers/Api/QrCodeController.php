@@ -8,12 +8,13 @@
 // +---------------------------------------------------------
 // | Author: Somebody <midsmr@qq.com>
 // +---------------------------------------------------------
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Models\Count;
 use Endroid\QrCode\ErrorCorrectionLevel;
 use Endroid\QrCode\QrCode;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class QrCodeController extends Controller
 {

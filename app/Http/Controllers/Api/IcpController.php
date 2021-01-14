@@ -8,13 +8,14 @@
 // +---------------------------------------------------------
 // | Author: Somebody <midsmr@qq.com>
 // +---------------------------------------------------------
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 
 use App\Models\Count;
 use HtmlParser\ParserDom;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\Controller;
 
 class IcpController extends Controller
 {
