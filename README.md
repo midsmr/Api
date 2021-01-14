@@ -1,5 +1,3 @@
-[![License](https://img.shields.io/badge/license-MulanPSL%201.0-brightgreen.svg)](https://github.com/midsmr/API/blob/main/LICENSE)
-
 ## 概述
 本程序基于Laravel构建
 
