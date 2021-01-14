@@ -2,8 +2,8 @@
 
 return [
 
-    'name' => '聚合API',//网站名称
-    'description' => '聚合API',//网站介绍(SEO)
+    'name' => '工具箱',//网站名称
+    'description' => '一个提供各种Web工具的网站',//网站介绍(SEO)
     'url' => 'http://127.0.0.1::8000',//网站地址
     'asset_url' => null,//静态资源CDN地址
     'timezone' => 'PRC',//网站时区
