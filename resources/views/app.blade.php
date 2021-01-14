@@ -25,10 +25,17 @@
             </div>
             <div class="lyear-layout-sidebar-info lyear-scroll">
                 <nav class="sidebar-main">
-                    <ul class="nav-drawer">@foreach(config('list') as $key => $value)<li class="nav-item" id="doc-{{$key}}"><a href="{{route('doc', ['action' => $key])}}"><i class="mdi {{$value['icon']}}"></i><span>{{$value['title']}}</span></a></li>@endforeach</ul>
+                    <ul class="nav-drawer">
+                        @foreach(config('list') as $key => $value)<li class="nav-item" id="doc-{{$key}}">
+                            <a href="{{route('doc', ['action' => $key])}}">
+                                <i class="mdi {{$value['icon']}}"></i>
+                                <span>{{$value['title']}}</span>
+                            </a>
+                        </li>@endforeach
+                    </ul>
                 </nav>
                 <div class="sidebar-footer">
-                    <p class="copyright">Copyright &copy; {{date('Y')}}. <a target="_blank" href="https://github.com/midsmr">midsmr</a> All rights reserved.</p>
+                    <p class="copyright">Copyright &copy; {{date('Y')}}. <a target="_blank" href="https://github.com/midsmr">midsmr</a>All rights reserved.</p>
                 </div>
             </div>
         </aside>
@@ -55,7 +62,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <header class="card-header"><div class="card-title">{{$title}}</div></header>
+                            <header class="card-header">
+                                <div class="card-title">{{$title}}</div>
+                            </header>
                             <div class="card-body">
                                 <div class="callout callout-success">{{$description}}</div>
 {!! $content !!}
@@ -77,7 +86,6 @@
 <script>
     $(function () {
         $('#doc-{{$action}}').addClass('active')
-
     })
 </script>
 </body>
