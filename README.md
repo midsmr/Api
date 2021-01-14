@@ -2,11 +2,14 @@
 
 ## 概述
 本站程序基于Laravel构建，
+
 提供的集成的接口均为技术手段抓包或者第三方开源仓库，
-由开源作者：[@SOMEBODY](https://github.com/midsmr) 提供永久更新维护。
+
+由开源作者：[@midsmr](https://github.com/midsmr) 提供永久更新维护。
 
 欢迎大家Star本仓库，
-更希望大家可以Fork本仓库一起让这个程序变得更强大
+
+希望大家可以Fork本仓库一起让这个程序变得更强大
 
 ## 已集成接口
 
@@ -16,20 +19,18 @@
 
 ## 特别感谢（排名不分先后）
 
-特别感谢以下开源项目为本项目做出的贡献
+特别感谢以下开源项目
 
-> PHP
+> [PHP](https://github.com/php/php-src)
 > 
-> Laravel
+> [Laravel](https://github.com/laravel/laravel)
 > 
-> Layui
+> [bupt1987/html-parser](https://github.com/bupt1987/html-parser)
 > 
-> clipboard.js
+> [endroid/qr-code](https://github.com/endroid/qr-code)
 > 
-> bupt1987/html-parser
-> 
-> endroid/qr-code
-
+> [yinqi/Light-Year-Admin-Template-v4](https://gitee.com/yinqi/Light-Year-Admin-Template-v4)
 
 ## 开源许可证
+
 本程序使用 [木兰宽松许可证2](http://license.coscl.org.cn/MulanPSL2) 开源发布
