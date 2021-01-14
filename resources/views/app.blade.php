@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>{{config('app.name')}}</title>
+    <title>{{$title}}-{{config('app.name')}}:{{config('app.description')}}</title>
     <meta name="description" content="{{config('app.description')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('favicon.ico')}}">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,7 +25,7 @@
             </div>
             <div class="lyear-layout-sidebar-info lyear-scroll">
                 <nav class="sidebar-main">
-                    <ul class="nav-drawer">@foreach(config('list') as $key => $value)<li class="nav-item" id="doc-{{$key}}"><a href="{{route('doc', ['action' => $key])}}"><i class="mdi mdi-home"></i><span>{{$value['title']}}</span></a></li>@endforeach</ul>
+                    <ul class="nav-drawer">@foreach(config('list') as $key => $value)<li class="nav-item" id="doc-{{$key}}"><a href="{{route('doc', ['action' => $key])}}"><i class="mdi {{$value['icon']}}"></i><span>{{$value['title']}}</span></a></li>@endforeach</ul>
                 </nav>
                 <div class="sidebar-footer">
                     <p class="copyright">Copyright &copy; {{date('Y')}}. <a target="_blank" href="https://github.com/midsmr">midsmr</a> All rights reserved.</p>
@@ -77,9 +77,7 @@
 <script>
     $(function () {
         $('#doc-{{$action}}').addClass('active')
-        if (isPC() === true) {
-            $('.lyear-aside-toggler').css('display', 'none');
-        }
+
     })
 </script>
 </body>
