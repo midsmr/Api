@@ -12,7 +12,7 @@
 return [
     'index' => [
         'title' => '概述',
-        'description' => '本程序的一些信息',
+        'description' => '关于本站',
     ],
     'icp' => [
         'title' => '备案查询',
