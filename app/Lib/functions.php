@@ -10,6 +10,11 @@
 // +---------------------------------------------------------
 use App\Lib\Helper;
 
+function markdown_path($path = '')
+{
+    return resource_path('markdown'.DIRECTORY_SEPARATOR.$path);
+}
+
 /**
  * Json响应函数
  * @param int|array $status 状态码
