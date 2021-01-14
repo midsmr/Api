@@ -11,5 +11,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('icp', 'IcpController@api')->name('api.icp');
-Route::get('qrcode', 'QrCodeController@api')->name('api.qrcode');
+Route::get('icp', 'IcpController@api')->name('icp');
+Route::get('qrcode', 'QrCodeController@api')->name('qrcode');
