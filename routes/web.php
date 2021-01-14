@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::redirect('', 'index', 301);
+
 Route::get('{action?}', 'DocController@index')->where('action', '[a-zA-Z]+')->name('doc');
