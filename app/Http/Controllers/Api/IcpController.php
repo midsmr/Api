@@ -91,10 +91,11 @@ class IcpController extends Controller
         $data['index'] = $dom->find('li[class=clearfix] p[class=Wzno]', 0)->getPlainText();
         //网站首页网址
 
-        $data['time'] = $dom->find('li[class=clearfix] p', 6)->getPlainText();
+        $data['time'] = $dom->find('li[class=clearfix] p', 7)->getPlainText();
         //审核时间
 
         foreach ($data as $v) {
+            $v = trim($v);
             if (is_null($v) || $v == null) {
                 return json(-4, '查询失败');
             }
