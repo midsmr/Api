@@ -19,9 +19,9 @@ return [
         'description' => '关于本站',
         'icon' => 'mdi-home',
     ],
-    'json' => [
-        'title' => 'JSON响应',
-        'description' => '所有接口JSON响应的公共参数说明',
+    'response' => [
+        'title' => '全局响应',
+        'description' => '所有接口响应的公共参数说明',
         'icon' => 'mdi-json',
     ],
     'icp' => [
