@@ -27,7 +27,7 @@
 > 
 > [endroid/qr-code](https://github.com/endroid/qr-code)
 > 
-> [yinqi/Light-Year-Admin-Template-v4](https://gitee.com/yinqi/Light-Year-Admin-Template-v4)
+> [yinqi/Light-Year-Admin-Template-v4](https://gitee.com/yinqi/Light-Year-Admin-Template)
 > 
 > [erusev/parsedown](https://github.com/erusev/parsedown)
 

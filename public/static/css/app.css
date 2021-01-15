@@ -4,3 +4,11 @@
     white-space: nowrap;
     color: #4d5259;
 }
+.quote {
+    padding: 15px 21px;
+    background-color: #fcfdfe;
+    border-left: 3px solid transparent;
+}
+.quote-primary {
+    border-left-color: #33cabb;
+}
