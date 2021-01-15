@@ -917,7 +917,7 @@ class Parsedown
                 'name' => 'table',
                 'elements' => array(),
                 'attributes' => [
-                    'class' => 'table'
+                    'class' => 'table table-bordered'
                 ]
             ),
         );
