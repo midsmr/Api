@@ -22,12 +22,12 @@ return [
     'response' => [
         'title' => '全局响应',
         'description' => '所有接口响应的公共参数说明',
-        'icon' => 'mdi-router-wireless',
+        'icon' => 'mdi-json',
     ],
     'request' => [
         'title' => '全局请求',
         'description' => '所有接口请求的公共参数说明',
-        'icon' => 'mdi-json',
+        'icon' => 'mdi-router-wireless',
     ],
     'icp' => [
         'title' => '备案查询',
