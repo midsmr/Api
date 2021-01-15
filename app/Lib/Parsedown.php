@@ -916,6 +916,9 @@ class Parsedown
             'element' => array(
                 'name' => 'table',
                 'elements' => array(),
+                'attributes' => [
+                    'class' => 'table'
+                ]
             ),
         );
 
