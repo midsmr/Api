@@ -12,7 +12,7 @@
 return [
     // title 为页面标题
     // description 为页面介绍词
-    // icon 为侧边栏按钮的mdi图标 具体查看 http://lyear.itshubao.com/v4/lyear_ui_icon.html
+    // icon 为侧边栏按钮的mdi图标 具体查看 http://lyear.itshubao.com/lyear_ui_icons.html
 
     'index' => [
         'title' => '概述',
