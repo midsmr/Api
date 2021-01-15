@@ -59,7 +59,7 @@ function curl_get($url) {
     $response = curl_exec($curl);
     return json_decode($response);
 }
-define('API', '这里填写网站的根域名 例如：http://api.midsmr.com');
+define('API', '这里填写网站的根域名 例如：https://api.midsmr.com');
 
 $domain = 'sxphp.cn'; //要查询的域名
 
