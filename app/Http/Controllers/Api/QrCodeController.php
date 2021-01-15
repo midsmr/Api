@@ -31,14 +31,18 @@ class QrCodeController extends Controller
         } else{
             $text = $request->get('text');
         }
-        $qrCode = new QrCode($text);
-        $qrCode->setSize(280);
-        $qrCode->setMargin(10);
-        $qrCode->setWriterByName('png');
-        $qrCode->setEncoding('UTF-8');
-        $qrCode->setErrorCorrectionLevel(ErrorCorrectionLevel::HIGH());
-        $qrCode->setRoundBlockSize(true, QrCode::ROUND_BLOCK_SIZE_MODE_MARGIN);
-        $qrCode->setValidateResult(false);
-        return response($qrCode->writeString())->header('Content-Type', $qrCode->getContentType());
+        try {
+            $qrCode = new QrCode($text);
+            $qrCode->setSize(280);
+            $qrCode->setMargin(10);
+            $qrCode->setWriterByName('png');
+            $qrCode->setEncoding('UTF-8');
+            $qrCode->setErrorCorrectionLevel(ErrorCorrectionLevel::HIGH());
+            $qrCode->setRoundBlockSize(true, QrCode::ROUND_BLOCK_SIZE_MODE_MARGIN);
+            $qrCode->setValidateResult(false);
+            return response($qrCode->writeString())->header('Content-Type', $qrCode->getContentType());
+        } catch (\Exception $exception) {
+            return response('生成失败');
+        }
     }
 }
