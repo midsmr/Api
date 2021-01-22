@@ -15,9 +15,12 @@
 > 
 > Qr二维码生成
 
-## 特别感谢（排名不分先后）
+## 鸣谢
+感谢由[JetBrains](https://www.jetbrains.com/?from=Api) 提供的JetBrains全家桶开源项目许可证
 
-特别感谢以下开源项目
+推荐使用Phpstorm作为PHP项目开发IDE
+
+感谢以下开源项目驱动本项目运行
 
 > [PHP](https://github.com/php/php-src)
 > 
